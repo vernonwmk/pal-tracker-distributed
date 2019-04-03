@@ -62,6 +62,7 @@ public class FlowTest {
         backlogServer.startWithDatabaseName("tracker_backlog_test");
         timesheetsServer.startWithDatabaseName("tracker_timesheets_test");
         ApplicationServer.waitOnPorts("8881", "8882", "8883", "8884");
+
         TestScenarioSupport.clearAllDatabases();
     }
 
